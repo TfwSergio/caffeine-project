@@ -12,21 +12,20 @@ Name:
 
 ## Explore Demo mode
 
-Starting latitude/longitude:
+Starting latitude/longitude:[37.3022],[-120.483]
 
 | Filter | Rank | Store ID / name | Distance in miles |
 |---|---:|---|---:|
-| All stores | 1 | | |
-| All stores | 2 | | |
-| All stores | 3 | | |
-| Drive-through only | 1 | | |
-| Drive-through only | 2 | | |
-| Drive-through only | 3 | | |
+| All stores | 1 | | |   0.08      No          Main Place - Merced / Merced - Merced County
+| All stores | 2 | | |	1.20      No          580 West Olive - Merced / Merced - Merced County
+| Drive-through only | 1 | | |    1.84      Yes         Childs & Hwy 99 - Merced / Merced - Merced County
+| Drive-through only | 2 | | |	7.32      Yes         Bellevue & Shaffer - Atwater / Atwater - Merced County
+| Drive-through only | 3 | | |	7.83      Yes         Applegate & Hwy 99 - Atwater / Atwater - Merced County
 
 What changed, and why would alphabetical order not answer this search?
 
 
-//Alphabetical order would not answer this search because it wouldnt be relevant to the person's location.
+//Alphabetical order would not answer this search because it wouldnt be relevant to the person's location. the reason the results changed was because one wanted places exclusively with drive through and the other did all of them with or without.
 
 ## Hand trace: merge [2, 7] and [3, 5]
 
