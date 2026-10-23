@@ -35,18 +35,30 @@ public final class MergeSort {
         int destination = start;
         long comparisons = 0;
 
-        // TODO A: While BOTH halves have items, compare their current elements.
-        // Count each comparator call. Copy the earlier item into buffer.
-        // On equal keys, take the left item to preserve stability.
-        // Advance the selected source index and the destination index.
+        // A: while both halves have items, pick the earlier one
+        while (left < middle && right < end) {
+            comparisons++;
+            if (order.compare(items.get(right), items.get(left)) < 0) {
+                buffer.set(destination++, items.get(right++));   // right is strictly smaller
+            } else {
+                buffer.set(destination++, items.get(left++));    // left is smaller OR equal (stable)
+            }
+        }
 
-        // TODO B: Copy any remaining elements from the left half into buffer.
+        // B: leftovers from the left half
+        while (left < middle) {
+            buffer.set(destination++, items.get(left++));
+        }
 
-        // TODO C: Copy any remaining elements from the right half into buffer.
+        // C: leftovers from the right half
+        while (right < end) {
+            buffer.set(destination++, items.get(right++));
+        }
 
-        // TODO D: Copy buffer[start..end) back into items[start..end).
-        // Return the number of comparisons performed by THIS merge.
-        // Replace the exception below with your implementation and return.
-        throw new UnsupportedOperationException("Complete TODO A-D in MergeSort.merge().");
+        // D: copy the merged range back and return this merge's comparison count
+        for (int i = start; i < end; i++) {
+            items.set(i, buffer.get(i));
+        }
+        return comparisons;
     }
 }

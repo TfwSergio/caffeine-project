@@ -25,6 +25,9 @@ Starting latitude/longitude:
 
 What changed, and why would alphabetical order not answer this search?
 
+
+//Alphabetical order would not answer this search because it wouldnt be relevant to the person's location.
+
 ## Hand trace: merge [2, 7] and [3, 5]
 
 | Step | Compared values (if any) | Item copied | Buffer so far |
